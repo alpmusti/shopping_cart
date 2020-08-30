@@ -1,4 +1,4 @@
-﻿# Shopping Cart
+# Shopping Cart [![Build Status](https://travis-ci.com/alpmusti/shopping_cart.svg?branch=master)](https://travis-ci.com/alpmusti/shopping_cart)
 
 ## Get Started
 
