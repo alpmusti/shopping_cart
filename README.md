@@ -1,5 +1,7 @@
 # Shopping Cart [![Build Status](https://travis-ci.com/alpmusti/shopping_cart.svg?branch=master)](https://travis-ci.com/alpmusti/shopping_cart)
 
+This project implements second case of Trendyol Codility assignment.
+
 ## Get Started
 
 We will talk about dependencies, installation and project structure with detailed in the below.
