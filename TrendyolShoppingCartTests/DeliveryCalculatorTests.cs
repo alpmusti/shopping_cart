@@ -20,6 +20,7 @@ namespace TrendyolShoppingCartTests
         [Fact]
         public void CalculateFor_NullCart_Should_RaiseException()
         {
+            calculator = new DeliveryCostCalculator(5, 10);
             Assert.Throws<ArgumentNullException>(() => calculator.CalculateFor(null));
         }
 
