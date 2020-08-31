@@ -118,9 +118,11 @@ namespace Trendyol.ShoppingCart
                 });
             });
 
-            Console.WriteLine($"\n{"Total Amount", padding * 2} {GetTotalAmounts(), padding * 2}TL");
-            Console.WriteLine($"{"Total Discounts", padding * 2} {(GetTotalAmounts() - GetTotalAmountAfterDiscount()), padding * 2}TL");
-            Console.WriteLine($"{"Total Amount After Checkout", padding * 2} {GetTotalAmountAfterDiscount(), padding * 2}TL");
+            Console.WriteLine($"\n{"Total Amount", padding * 2} {GetTotalAmounts().ToString("0.##"), padding * 2} TL");
+            Console.WriteLine($"{"Total Discounts", padding * 2} {(GetTotalAmounts() - GetTotalAmountAfterDiscount()).ToString("0.##"), padding * 2} TL");
+            Console.WriteLine($"{"Subtotal",padding * 2} {GetTotalAmountAfterDiscount().ToString("0.##"),padding * 2} TL");
+            Console.WriteLine($"{"Delivery Cost",padding * 2} {GetDeliveryCost().ToString("0.##"),padding * 2} TL");
+            Console.WriteLine($"{"Total",padding * 2} {(GetDeliveryCost() + GetTotalAmountAfterDiscount()).ToString("0.##"),padding * 2} TL");
         }
     }
 }
